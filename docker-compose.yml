@@ -1,11 +1,7 @@
 version: '3'
 services:
   nginx:
-    image: 232490755822.dkr.ecr.us-west-2.amazonaws.com/davidgiffin/aws-ecr-http-proxy:latest
-    command: 
-      - "/usr/bin/supervisord"
-      - "-c"
-      - "/etc/supervisord.conf"
+    image: docker.giffin.org/davidgiffin/aws-ecr-http-proxy:latest
     ports:
       - "5000:5000"
     environment:
