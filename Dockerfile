@@ -12,6 +12,8 @@ COPY files/startup.sh files/renew_token.sh /
 COPY files/ecr.ini /etc/supervisor.d/ecr.ini
 COPY files/root /etc/crontabs/root
 
+RUN echo hieee
+
 COPY files/nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
 COPY files/ssl.conf /usr/local/openresty/nginx/conf/ssl.conf
 
